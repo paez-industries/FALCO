@@ -1,0 +1,5 @@
+TITULOS TESIS
+
+- "Dise�o de un sistema de control automatico para la adquisici�n y presentaci�n de datos."
+- "Dise�o de un sistema de control automatico mediante el uso de software LABVIEW,
+   para la adquisici�n y presentaci�n de datos en tiempo real, y control remoto".

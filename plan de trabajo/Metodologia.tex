@@ -1,0 +1,220 @@
+%%%% Metología propuesta
+
+\chapter{Metodología}
+\section{Plan de Actividades}
+
+Con el fin de cumplir con lo planteado para el proyecto se diseña el cronograma mostrado en la en la figura \ref{fig:Crono}.
+
+%\begin{center} ARREGLAR POR NUEVAS COSAS 
+\begin{figure}[ht!]
+\begin{centering}
+%\includegraphics [angle=90]{Images/Cronograma}
+\includegraphics [trim = 0mm 0mm 0mm 0mm, clip,angle=0,scale=0.50]{Images/cronograma.png}%trim recorta izquierda abajo derecha arriba
+%\par\end{centering}
+\caption{\label{fig:Crono}Cronograma de actividades}
+\textit{Fuente: Autores}. 
+\par\end{centering}
+\end{figure}
+%\par
+%\end{center}
+
+%\begin{figure}[ht]
+%\caption{\label{fig:Cronograma} Cronograma de actividades}
+%\begin{centering}
+%\includegraphics [trim = 0mm 3mm 0mm 0mm, clip,angle=0,scale=0.75]{Images/Cronograma}
+%\textit{Fuente: Autor}.
+%\par \end{centering}
+%\end{figure}
+
+% 1
+\subsection{Identificación del problema}
+
+Se hace un estudio de las principales necesidades existentes entre los investigadores que hacen uso del laboratorio, y se plantea la solución a dichas necesidades.  
+% 2
+\subsection{Revisión bibliográfica}
+
+Se consulta acerca de las diferentes metodologías que se pueden implementar en la solución planteada, así como de ejemplos y casos de estudio a problemas solucionados en éste ámbito. 
+
+% 3
+\subsection{Diseño Switch, Cotización y Adquisición De Los Elementos Para La Construcción Del Switch}
+
+Se hace un diseño del circuito de acuerdo a las necesidades identificadas con relación a los diferentes parámetros que se desean utilizar y a las diferentes variables que se desean medir. 
+
+% 4
+\subsection{Caracterización y Estudio De Los Elementos a Usar}
+
+Se hace una caracterización completa de los elementos que se adquirieron para la construcción del switch, y de esta forma tener claras las especificaciones reales (como el slew rate) del switch a construir. 
+
+% 5
+\subsection{Construcción y Pruebas Del Switch}
+
+Se procede con la construcción del switch, así como de realizar las pruebas correspondientes para la la determinación de sus especificaciones y cotas de funcionamiento.
+
+% 6
+\subsection{Diseño y Construcción De La Plataforma De Control}
+
+Se diseña y construye la plataforma de control con la cual se hará la integración de los subsistemas finales así como el control y monitoreo de los mismos. Para esta etapa se tiene en buena medida la consideración de los usuarios  la fecha que estén haciendo uso del laboratorio para de esta forma realizar un diseño de interfaz intuitivo y fácil de usar. 
+ 
+% 7
+\subsection{Diseño Del Circuito De Protección Eléctrica}
+
+Habiendo construido el switch y la plataforma de control, se procede a diseñar y construir el circuito de protección, esto teniendo claros los límites óptimos de funcionamiento de los diferentes subsistemas.
+
+% 8
+\subsection{Pruebas Del Circuito De Protección Eléctrica}
+
+Se realizan las pruebas correspondientes a este circuito, cabe aclarar que dichas pruebas se hacen en un ambiente controlado sin comprometer la integridad de los elementos reales a proteger. 
+
+% 9
+\subsection{Integración De Los Subsistemas} 
+
+Se procede a unir y sincronizar cada una de las partes antes construidas, de forma que se puedan operar al unisono cumpliendo cada una con su objetivo. 
+
+% 10
+\subsection{Pruebas Finales Del Sistema Integrado}
+
+Para las pruebas finales, se realiza un test completo del sistema para cada uno de los lineamientos a cumplir o que se han planteado en los objetivos. Se da a conocer el sistema final a los usuarios que a la fecha hagan uso del laboratorio, para poder garantizar su funcionalidad y operatividad. 
+
+% 11
+\subsection{Informe De Resultados y Documentación Final }
+
+En esta etapa final, se recopilan los resultados, los problemas encontrados, el análisis realizado y solución, además de las conclusiones obtenidas durante el desarrollo del proyecto y se consignan en el documento final; esto se realiza simultáneamente con las etapas mencionadas anteriormente.
+
+\section{Diagrama de bloques}
+
+Para la realización de este proyecto, se plantea el diagrama de bloques de la figura \ref{fig:bloques}, en donde se observa de manera general el sistema planteado para la solución
+
+\begin{figure}[ht!]
+\begin{centering}
+%\includegraphics [angle=90]{Images/Cronograma}
+%\includegraphics [trim = 0mm 0mm 0mm 0mm, clip,angle=0,scale=0.65]{Images/bloques}%trim recorta izquierda abajo derecha arriba
+%\par\end{centering}
+\caption{\label{fig:bloques}Diagrama de bloques de la solución.}
+\textit{Tomada de \cite{Proto}, editada por autores.} 
+\par\end{centering}
+\end{figure}
+
+\section{Resultados Esperados}
+
+\begin{itemize}
+\item Entregar una plataforma funcional e intuitiva, que le permita al usuario reducir el tiempo en el que obtiene los datos necesarios para desarrollar su investigación.    
+
+\item Entregar una plataforma virtual que permita el uso del sistema de laboratorio remotamente con una configuración de cargas asignadas previamente. Así mismo, que le permita a personal asociado la visualización en tiempo real de los datos adquiridos. 
+
+\item Entregar un switch funcional, con una entrada y una salida de tensión de 24 a 575 [V AC rms] y que permita el flujo de corriente de 0.10 a 75 [A rms]. En conjunto con la plataforma de control debe permitir mejorar la precisión en cuanto a intervalos de tiempo.
+
+\item Entregar un sistema modular, escalable e intuitivo, que le permita al usuario mejorarlo de forma fácil según sus necesidades, estableciendo perfiles de uso.
+
+\end{itemize}
+
+\section{Recursos e infraestructura}
+
+
+
+
+%\begin{table}[ht!]
+\begin{table}[ht]
+\caption{\label{tab:Recurso-humano} Recurso humano}
+\begin{centering}
+\begin{tabular}{|c||c||c|}
+\hline 
+Función  & Horas/Sem & Dedicación Total
+\tabularnewline
+\hline
+\hline 
+Director del Proyecto & 1 & 24 \tabularnewline % areglar horas 
+\hline 
+\hline
+Codirector del Proyecto & 1 & 24 \tabularnewline %% areglar horas 
+\hline 
+\hline
+Autores & 16  & 384 \tabularnewline %%areglar horas
+\hline
+\hline
+\end{tabular}
+\par \end{centering}
+\end{table}
+%\end{center}
+
+%\begin{center}
+\begin{table}[ht]
+\caption{\label{tab:Resumen-costos-equipo} Equipo, software e insumos}
+\begin{centering}
+\begin{tabular}{|c||c||c|}
+\hline 
+\textbf{Descripción} & \textbf{Cantidad} & \textbf{Justificación} \tabularnewline
+\hline
+\hline 
+ &  &  Almacenamiento de Información\tabularnewline
+Equipos  & 2 & Programación del microprocesador \tabularnewline
+ de Cómputo &  & Interfaz de monitoreo \tabularnewline & & Diseño y visualización   \tabularnewline
+ \hline
+ \hline
+Microprocesador  & 1 & Recepción y transmisión de datos   \tabularnewline
+\hline  
+\hline
+Celular  & 1 &  Visualización de aplicacion de monitoreo\tabularnewline
+\hline 
+\hline
+Papelería & Global & Presentación de informes y papeleo necesario  \tabularnewline 
+\hline 
+\hline
+Prototipo de caracterización &  &  \tabularnewline 
+de paneles fotovoltaicos y medición & 1 & Medición de variables \tabularnewline 
+de variables metereológicas & & \tabularnewline 
+\hline
+\hline
+Memoria externa  & 1 & Almacenamiento de información\tabularnewline
+\hline
+\hline
+Acceso a bases de datos & Global & Busqueda de información \tabularnewline
+\hline
+\hline
+\end{tabular}
+\par\end{centering}
+\end{table}
+
+
+\newpage
+\chapter{Reseña bibliográfica}
+
+Cuando hablamos de IoT, pensamos en los teléfonos móviles como centro de diferentes operaciones, por ello Paul Jacobs, ex jefe ejecutivo de Qualcomm, ha dicho:''En el futuro, casi todas las cosas estarán enlazadas en la web, y los teléfonos móviles funcionarán como centros de actividades para IoT. Por lo tanto, IoT es nada más que la conexión a Internet de objetos inteligentes y sistemas embebidos, con teléfonos móviles como centros de acceso''. Los objetos inteligentes se pueden describir como cosas u objetos que son responsables de proporcionar información útil sobre sus interacciones en una red. Estos objetos se pueden desplegar en una red vía Bluetooth Baja Energía (IEEE 802.15.4), Wi-Fi (IEEE 802.11), Ethernet (IEEE 802.3) u otro tipo de protocolo de comunicación.
+
+Las posibilidades de desarrollo que ofrece IoT tanto en hardware como en software son infinitas. El hardware IoT puede clasificarse en dos categorías amplias: dispositivos y aparatos portátiles y
+sistemas embebidos y tarjetas, como se muestra en la Figura 4.1.
+En la categoría de portátiles, se encuentran muchos aparatos hoy en día, que van desde zapatos inteligentes, gafas y hasta relojes que sirven para recibir llamadas.
+Por otro lado, tanto los aspectos de hardware como de software están abiertos para los desarrolladores bajo los sistemas embebidos y
+tarjetas de desarrollo. Los servicios prestados por estos sistemas y
+tarjetas pueden ser clasificados en tres subcategorías: control de dispositivos, adquisición de datos, y aplicaciones de desarrollo. El control de dispositivos incluye la supervisión de dispositivos, seguridad y actualizaciones de software. La adquisición de datos abarca la gestión y transformación de información en diferentes capas del IoT. Por último, el desarrollo de aplicaciones incluye análisis, lógica impulsada por eventos, visualización y programación de aplicaciones.\cite{7879392}
+
+\begin{figure}[ht!]
+\begin{centering}
+%\includegraphics [angle=90]{Images/Cronograma}
+\includegraphics [trim = 0mm 0mm 0mm 0mm, clip,angle=0,scale=0.6]{Images/hadware}%trim recorta izquierda abajo derecha arriba
+\caption{\label{fig:Hadware}Clasificación del Hadware en IoT} \textit{Tomada de: ''Create Your Own Internet of Things'', por K.J.Singh and D.S.Kapoor, 2017, IEEE Consumer Electronics Magazine , Vol 6 No.2, p. 57-68.}
+\par\end{centering}
+\end{figure}
+
+En cuanto al software en IoT, se cuenta con una amplia gama de herramientas, con diferentes tipos de lenguaje, como C, C++, python,entre otros. Existen muchas plataformas de software IoT dsiponibles en el mercado para simplificar y acelerar el proceso de enviar y/o recibir información, proporcionan marcos de programación máquina a máquina (M2M), gestión de datos y de dispositivos, seguridad, almacenamiento y traducción de protocolos. Muchas de estas herramientas cuentan con diferentes servicios como por ejemplo, que cuando se produzca un evento específico en el mundo real, se emita una notificación mediante correo electrónico o mensaje de texto. 
+
+La selección de una plataforma de software IoT es una parte crítica del desarrollo de productos IoT. Es esencial saber qué plataforma de software IoT soportará una plataforma de hardware IoT específica. La elección de una plataforma de software óptima será impulsada por los instrumentos proporcionados, específicamente, el IDE para la programación y la API disponible para el acceso de datos y notificaciones.
+Además, la eficiencia de las herramientas de gestión de datos, tales como aplicaciones de escritorio y móviles, cuadros de mando y similares, también hace que la elección particular sea significativa. Por último, los precios, el apoyo de la comunidad y la documentación disponible también deben tenerse en cuenta al seleccionar una plataforma de software.\cite{7879392}
+
+\nocite{7925808}
+\nocite{7842386}
+\nocite{esp32}
+\nocite{omega}
+\nocite{raspberry}
+\nocite{molano}
+\nocite{Cha}
+\nocite{thingspeak}
+\nocite{initial}
+\nocite{ubidots}
+
+
+\begin{figure}[ht!]
+\begin{centering}
+\includegraphics [trim = 0mm 0mm 0mm 0mm, clip,angle=0,scale=0.55]{Images/software}%trim recorta izquierda abajo derecha arriba
+\caption{\label{fig:Software}Clasificación del software en IoT} \textit{Tomada de: ''Create Your Own Internet of Things'', por K.J.Singh and D.S.Kapoor, 2017, IEEE Consumer Electronics Magazine , Vol 6 No.2, p. 57-68.}
+\par\end{centering}
+\end{figure}

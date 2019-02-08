@@ -1,0 +1,71 @@
+
+%%%Configuracion del documento
+\include{Paquetes}
+
+%Información general del proyecto
+\autoruno{Edwin Paez Guerrero}
+\correouno{edwin.paez2@correo.uis.edu.co}
+\codigouno{2130554}
+
+\autordos{Johan Nicolas Riaño Torres}
+\correodos{johan.riano@correo.uis.edu.co}
+\codigodos{2141826}
+
+\titulo{Automatización del laboratorio de calidad de la energía eléctrica de la Universidad Industrial de Santander UIS}
+
+\director{Yulieth Jimenez Manjarrez}
+\cargodirector{PhD. }
+\correodirector{yulijmanjarres@gmail.com}
+
+\codirector{sin confirmar aún}
+\cargocodirector{nn}
+\correocodirector{nn}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% Inicio del documento
+\begin{document}
+
+
+%%%%%%%%%%%%%%%% 	PORTADA		%%%%%%%%%%%%%%%%%%%%%%
+% \include{Portada}
+
+%%%%%%%%%%%%%%%% 	CONTRAPORTADA		%%%%%%%%%%%%%%%%%%%%%%
+\include{Contraportada}
+
+%%%%%%%%%%%%%%%% 	TABLA DE FIRMAS		%%%%%%%%%%%%%%%%%%%%%%
+\include{TablaFirmas}
+
+% %%%%%%%%%%%%%%%% 	TABLAS TODAS		%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+
+% \cleardoublepage
+% \addcontentsline{toc}{chapter}{Índice de figuras} % para que aparezca en el indice de contenidos
+\listoffigures
+
+% \cleardoublepage
+% \addcontentsline{toc}{chapter}{Índice de tablas} % para que aparezca en el indice de contenidos
+% \listoftables
+
+%%%%%%%%%%%%%%%% 	RESUMEN		%%%%%%%%%%%%%%%%%%%%%%
+\include{Resumen}
+
+%%%%%%%%%%%%%%%% 	DESCRIPCION		%%%%%%%%%%%%%%%%%%%%%%
+\include{Descripcion}
+
+%%%%%%%%%%%%%%%% 	MARCO TEORICO	%%%%%%%%%%%%%%%%%%%%%%
+\include{Alcance}
+
+%%%%%%%%%%%%%%%% 	METODOLOGIA		%%%%%%%%%%%%%%%%%%%%%%
+\include{Metodologia}
+
+%%%%%%%%%%%%%%%% 	BIBLIOGRAFIA	%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}%para que aparezca en la tabla de cotenidos
+\bibliographystyle{unsrt}
+\bibliography{Proyecto_TAI.bib}
+%Archivo con las referencias bibliograficas, creado en JabRef (o manualmente)
+
+
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[a4paper,oneside,12pt]{book}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} %Para las tildes
+\usepackage{geometry}
+%\geometry{verbose,letterpaper,tmargin=50pt,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=20pt,headsep=1cm,footskip=30pt}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=25pt,headsep=1cm,footskip=30pt}%márgenes para las normas APA
+\usepackage{setspace}
+\usepackage{graphicx} %Para las gráficas
+\usepackage{multirow,colortbl}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=RoyalBlue,urlcolor=blue]{hyperref}
+
+
+\pdfstringdefDisableCommands{%Para eliminar los errores de hyperref en los capitulos
+  \let\enspace\empty  % this causes the warning for \kern
+  \let\noindent\empty }% this causes the warning for \indent
+  
+%\usepackage[colorlinks,bookmarks=true]{hyperref}
+\usepackage{amsfonts} %Para simbolos y símbolo numeros reales
+\usepackage{cite} % para contraer referencias
+\usepackage{amsmath}
+
+%\pagestyle{uheadings}
+\setcounter{tocdepth}{3}
+\usepackage{longtable}
+\usepackage{pifont}
+\onehalfspacing
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\setcounter{secnumdepth}{3} %para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+
+%\usepackage{anysize}%Para cambiar los márgenes
+%Para que se habilite la opción de modificar las márgenes en las páginas
+\newenvironment{changemargin}[2]{% 
+\begin{list}{}{% 
+\setlength{\topsep}{0pt}% 
+\setlength{\leftmargin}{#1}% 
+\setlength{\rightmargin}{#2}% 
+\setlength{\listparindent}{\parindent}% 
+\setlength{\itemindent}{\parindent}% 
+\setlength{\parsep}{\parskip}% 
+}% 
+\item[]}{\end{list}} 
+
+%% se generan campos para facilitar la edición del archivo
+\def\autoruno#1{\gdef\insertautoruno{#1}\gdef\@authoruno{#1}}
+\def\autordos#1{\gdef\insertautordos{#1}\gdef\@authordos{#1}}
+\def\correouno#1{\gdef\insertcorreouno{#1}}
+\def\correodos#1{\gdef\insertcorreodos{#1}}
+\def\codigouno#1{\gdef\insertcodigouno{#1}}
+\def\codigodos#1{\gdef\insertcodigodos{#1}}
+\def\titulo#1{\gdef\inserttitulo{#1}\gdef\@titulo{#1}}
+\def\director#1{\gdef\insertdirector{#1}}
+\def\cargodirector#1{\gdef\insertcargodirector{#1}}
+\def\correodirector#1{\gdef\insertcorreodirector{#1}}
+\def\codirector#1{\gdef\insertcodirector{#1}}
+\def\cargocodirector#1{\gdef\insertcargocodirector{#1}}
+\def\correocodirector#1{\gdef\insertcorreocodirector{#1}}
+
+% % Cambiar el nombre índicie de cuadros por indicie de tablas
+% \renewcommand{\listtablename}{Índice de tablas}
+% \renewcommand{\tablename}{Tabla}
